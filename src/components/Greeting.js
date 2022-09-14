@@ -5,12 +5,12 @@ import { getGreetingAsync } from "../store/greetingReducer";
 
 const Greeting = () => {
   const dispatch = useDispatch();
-  const { loading, error, greet } = useSelector((state) => state.greeting);
+  const {  greet } = useSelector((state) => state.greeting);
 
 
   useEffect(() => {
     dispatch(getGreetingAsync());
-  }, []);
+  }, [dispatch]);
 
 
   const handleGreeting = () => {
