@@ -1,7 +1,7 @@
-import React from "react";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getGreetingAsync } from "../store/greetingReducer";
+import React from 'react';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getGreetingAsync } from '../store/greetingReducer';
 
 const Greeting = () => {
   const dispatch = useDispatch();
